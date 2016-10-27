@@ -1,17 +1,76 @@
 body {
 
   font-family: 'Allerta', sans-serif;
+  margin: 0;
+}
+
+.imageCompleta {
+
+  background: url('../Image/background.png') no-repeat ;
+  background-size: cover;
+}
+
+.contenedor {
+
+  width: 50%;
+  margin: auto;
+}
+
+figure.logotipo {
+
+  margin-top: 30px;
+}
+
+.left .izquierda{
+
+  float: left;
+  position: relative;
+  top: -15px;
+  left: -9px;
+}
+
+.right .derecha{
+
+  float: right;
+  position: relative;
+  bottom: 115px;
+  right: 158px;
 }
 
 .titulo {
 
   font-size: 70px;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
 }
 
 .title-a {
 
   font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.title-b {
+
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+.title-c {
+
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+
+.guitarras {
+
+  color: #1F313C;
 }
 
 .guitarras h2 {
@@ -20,23 +79,88 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.title-b {
-
-  font-size: 50px;
-}
-
 .portada {
 
-  background-image: url('../Image/background.png');
   color: white;
-}
-
-.guitarras {
-
-  color: #1F313C;
+  padding: 75px;
+  padding-bottom: 200px;
+  padding-right: 0;
 }
 
 .nav {
 
   font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+
+}
+
+.nav ul {
+
+  margin-top: 10px;
+}
+
+.nav li {
+
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.logotipo {
+
+  display: inline-block;
+}
+
+.guitarra ol {
+
+  padding-left: 30px;
+  margin-top: 0;
+  margin-bottom: 52px;
+}
+
+.guitarra ol.right-1{
+
+  padding-left: 30px;
+  margin-top: 0;
+  margin-bottom: 58px;
+}
+
+.guitarra {
+
+  /*overflow: hidden;*/
+  border: 1px solid #1F313C;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.contenedor-guitarra-b {
+
+    margin-left: 241pxpx;
+}
+
+.contenedor-guitarra-a {
+
+  margin-left: 20px;
+  padding-left: 30px;
+}
+
+.left {
+
+  position: relative;
+}
+
+.header {
+
+  position: relative;
+}
+
+button {
+
+  border-radius: 8px;
+  border: none;
+  background: #fd324e;
+  color: white;
+  padding: 10px;
+
 }

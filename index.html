@@ -7,48 +7,55 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Allerta" rel="stylesheet">
   </head>
   <body>
-    <header id="header" class="header">                        <!-- Header -->
-      <figure class="logotipo">                                <!-- Logotipo -->
-          <img src="Image/invie.png" width="186" height="60" alt="Invie - Guitarras"/>
-      </figure>
-      <nav class="nav">                                       <!-- Menu -->
-          <ul>
-            <li>
-              <a href="index.html" target="_blank" >Home</a>
-            </li>
-            <li >
-              <a href="#guitarras" > Guitarras</a>
-            </li>
-            <li>
-              <a href="precios.html" target"_blank" >Precios</a>
-            </li>
-          </ul>
-      </nav>
-    </header>
-    <section id="portada" class="portada">                      <!-- Portada -->
-      <h1 class="titulo">Guitarras Inviesibles</h1>
-      <h3 class="title-a">Se la estrella de rock que siempre quisiste ser</h3>
-      <button>Conoce mas</button>
-    </section>
-    <section id="guitarras" class="guitarras">                                   <!-- Guitarras -->
+    <div class="imageCompleta">
+      <header id="header" class="header contenedor">                        <!-- Header -->
+        <figure class="logotipo">                                <!-- Logotipo -->
+            <img src="Image/invie.png" width="186" height="60" alt="Invie - Guitarras"/>
+        </figure>
+        <nav class="nav">                                       <!-- Menu -->
+            <ul>
+              <li>
+                <a href="index.html" target="_blank" >Home</a>
+              </li>
+              <li>
+                <a href="#guitarras" > Guitarras</a>
+              </li>
+              <li>
+                <a href="precios.html" target"_blank" >Precios</a>
+              </li>
+            </ul>
+        </nav>
+      </header>
+      <section id="portada" class="portada contenedor">                      <!-- Portada -->
+        <h1 class="titulo">Guitarras Inviesibles</h1>
+        <h3 class="title-a">Se la estrella de rock que siempre quisiste ser</h3>
+        <button>Conoce mas</button>
+      </section>
+    </div>
+    <section id="guitarras" class="guitarras contenedor" >                                   <!-- Guitarras -->
       <h2>Nuestras Guitarras</h2>
-      <article class="guitarra">                                 <!-- Guitarra 1 -->
-          <img src="image/invie-acustica.png" alt="Guitarra Invie Classic" width="200" />
-          <h3 class="title-b">Invie Acustica</h3>
-          <ol>
-            <li>Estilo vintage</li>
-            <li>Madera Pura</li>
-            <li>Incluye estuche invisible de aluminio</li>
-          </ol>
+      <article class="guitarra right">                                 <!-- Guitarra 1 -->
+          <img  class="derecha" src="image/invie-acustica.png" alt="Guitarra Invie Acustica" width="250" height="320"/>
+      <div class="contenedor-guitarra-a">
+        <h3 class="title-b">Invie Acustica</h3>
+        <ol class="left1">
+           <li>Estilo vintage</li>
+           <li>Madera Pura</li>
+           <li>Incluye estuche invisible de aluminio</li>
+         </ol>
+      </div>
       </article>
-      <article class="guitarra">                              <!-- Guitarra 2 -->
-        <img src="image/invie-classic.png"  alt="Guitarra Invie Acustica" width="200" />
-        <h3 class="title-b"> Invie Classic </h3>
-        <ol>
-          <li>Estilo vintage</li>
-          <li>Liviana</li>
-          <li>Inicia tu camino como RockStar</li>
-        </ol>
+      <article class="guitarra left">                              <!-- Guitarra 2 -->
+        <img class="izquierda" src="image/invie-classic.png"  alt="Guitarra Invie Classic" width="250" height="280" />
+        <div class="contenedor-guitarra-b">
+          <h3 class="title-c" > Invie Classic </h3>
+          <ol class="right-1">
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como RockStar</li>
+          </ol>
+        </div>
+        <a></a>
       </article>
     </section>
   </body>
