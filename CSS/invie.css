@@ -1,3 +1,9 @@
+a {
+
+  text-decoration: none;
+  color: white;
+}
+
 body {
 
   font-family: 'Allerta', sans-serif;
@@ -10,9 +16,20 @@ body {
   background-size: cover;
 }
 
+input, textarea{
+
+  outline: 0;
+}
+
+input:focus, textarea:focus{
+
+    border: 2px solid red;
+}
+
+
 .contenedor {
 
-  width: 50%;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -25,21 +42,21 @@ figure.logotipo {
 
   float: left;
   position: relative;
-  top: -15px;
-  left: -9px;
+  top: -13px;
+  left: 80px;
 }
 
 .right .derecha{
 
   float: right;
   position: relative;
-  bottom: 115px;
+  bottom: 116px;
   right: 158px;
 }
 
 .titulo {
 
-  font-size: 70px;
+  font-size: 65px;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 15px;
 }
@@ -93,6 +110,7 @@ figure.logotipo {
   display: inline-block;
   position: absolute;
   right: 0;
+  margin-top: 42px;
 
 }
 
@@ -136,7 +154,10 @@ figure.logotipo {
 
 .contenedor-guitarra-b {
 
-    margin-left: 241pxpx;
+    margin-left: 241px;
+    position: relative;
+    right: -225px;
+    bottom: -15px;
 }
 
 .contenedor-guitarra-a {
@@ -157,10 +178,462 @@ figure.logotipo {
 
 button {
 
-  border-radius: 8px;
+  border-radius: 10px;
   border: none;
-  background: #fd324e;
+  background: linear-gradient(to left, #fd324e, #ff7250);
   color: white;
-  padding: 10px;
+  padding: 9px 23px;
+  font-size: 16px;
+  margin-top: 14px;
+}
+
+.footer {
+
+  background: #1F313C;
+  margin-top: 69px;
+  padding-bottom: 65px;
 
 }
+
+.contacto img {
+
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 33px;
+}
+
+.contacto strong {
+
+  display: block;
+}
+
+.contacto a {
+
+  color: white;
+  text-decoration: none;
+  margin-right: 60px;
+}
+
+.footer .contenedor{
+
+  display: flex;
+  justify-content: space-between;
+  margin-right: 566px;
+}
+
+.cajaContacto {
+
+  display: flex;
+  justify-content: space-between;
+}
+form {
+
+  color: white;
+}
+
+.formulario {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario1 {
+
+  margin-right: 83px;
+  margin-top: 37px;
+}
+
+.formularioNombre {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sexo {
+
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.intereses {
+
+  display: flex;
+}
+
+.intereses label {
+
+  margin-right: 15px;
+}
+
+.formularioNombre label {
+
+  margin-top: 12px;
+}
+
+.formulario2 {
+
+    margin-top: 33px;
+}
+
+textarea {
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formulario2 input {
+
+  color: white;
+  background: linear-gradient(to left, #fd324e, #ff7250);
+  border: none;
+  padding: 12px;
+  border-radius: 17px;
+}
+
+table {
+
+  width: 100%;
+  margin-bottom: 136px;
+  margin-top: 138px;
+}
+
+th {
+
+  background: #273b47;
+  color: white;
+  padding: 10px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+td {
+
+  padding: 30px;
+}
+
+table, td, th {
+
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+
+@media (min-width: 801px) and (max-width: 1024px){
+
+  .footer .contenedor {
+
+    flex-wrap: wrap;
+    margin-right: 156px;
+  }
+
+ div.contacto {
+
+   margin-left: 292px;
+ }
+
+ .formulario {
+
+   margin-left: 91px;
+ }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .titulo {
+
+    font-size: 45px;
+    margin: 0;
+  }
+
+  .title-a {
+
+    font-size: 18px;
+  }
+
+  .portada {
+
+    padding: 14px 75px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  figure.logotipo {
+
+    margin-top: 3px;
+  }
+
+  .logotipo {
+
+    margin: 0;
+  }
+
+  .logotipo img {
+
+    display: block;
+    max-width: 124px;
+  }
+
+  .nav {
+
+    position: inherit;
+    margin-top: 18px;
+  }
+
+  .nav ul {
+
+
+    font-size: 21px;
+    padding-left: 0;
+    margin-bottom: 11px;
+  }
+
+  .guitarras{
+
+    text-align: center;
+    max-width: 75vw;
+  }
+
+  .left .izquierda, .right .derecha {
+
+    float: none;
+    position: static;
+    max-height: 185px;
+  }
+
+  .title-b {
+
+    font-size: 38px;
+    margin: 10px 0;
+  }
+
+  .title-b ol {
+
+    margin-bottom: 23px;
+  }
+
+
+  .contenedor-guitarra-a{
+
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+
+  .guitarra li {
+
+    list-style: none;
+  }
+
+  .contenedor-guitarra-a ol {
+
+    margin-bottom: 10px;
+  }
+
+  .left .izquierda {
+
+    float:none;
+    position: static;
+    margin-top: 15px;
+    max-height: 218px;
+  }
+
+  .contenedor-guitarra-b {
+
+    margin: 0;
+    position: static;
+  }
+
+  .guitarra ol.right-1 {
+
+    margin-bottom: 16px;
+    padding: 0;
+  }
+
+  .title-c {
+
+    font-size: 38px;
+  }
+
+    .footer .contenedor {
+
+      align-items: center;
+      margin-right: 0;
+      flex-direction: column-reverse;
+    }
+
+    div.contacto {
+
+      margin-left: 0;
+      max-width: none;
+      display: inline-flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cajaContacato {
+
+      margin-left: 64px;
+    }
+
+    .formulario {
+
+      align-items: baseline;
+      max-width: 100vw;
+      flex-direction: column;
+    }
+
+    .formulario1 {
+
+      display: flex;
+      width: 91vw;
+      max-width: 91vw;
+      justify-content: space-between;
+      margin: 0;
+      margin-top: 17px;
+
+    }
+
+    .footer {
+
+      padding: 0;
+    }
+
+    .formularioNombre label {
+
+      margin-top: 15px
+    }
+
+    .sexo {
+
+      margin: 0 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .aloha {
+
+      margin: 0;
+      margin-bottom: 24px;
+      margin-top: 18px;
+    }
+
+    .contacto img {
+
+      max-height: 41px;
+      margin-right: 72px;
+
+    }
+
+    .fomulario2  label {
+
+      margin-top: 17px;
+    }
+
+    .ayudita {
+
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    .intereses {
+
+      flex-direction: column;
+    }
+
+    .intereses label {
+
+      margin: 3px 0;
+      margin-right: 0;
+    }
+
+  }
+
+    @media (min-width: 480px) and (max-width: 700px) {
+
+        div.contacto{
+
+          max-width: 427px;
+          margin: 32px;
+        }
+
+        .contacto img {
+
+          max-height: 33px;
+          margin: 0;
+        }
+
+        .contacto a {
+
+          margin-right: 0;
+          margin-left: 33px;
+        }
+    }
+
+    @media (min-width: 1px) and (max-width: 479px)  {
+
+      .footer .contenedor {
+
+        margin-right: 0;
+      }
+
+      div.contacto {
+
+        max-width: 250px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 61px;
+      }
+
+      .cajaContacto {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+      }
+
+      .contacto a {
+
+        margin-bottom: 17px;
+      }
+
+      .formulario1 {
+
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sexo {
+
+        max-width: 122px;
+        margin: 0;
+      }
+
+      .interese label {
+
+        margin: 8px 0;
+      }
+
+      .ayudita {
+
+        margin-left: 23px;
+      }
+
+      textarea {
+
+        max-width: 252px;
+      }
+
+    }

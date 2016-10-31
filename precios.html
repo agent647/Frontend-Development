@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Invie</title>
+    <title>Precios de Invie</title>
     <link rel="stylesheet" href="CSS/invie.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Allerta" rel="stylesheet">
   </head>
@@ -15,48 +15,47 @@
         <nav class="nav">                                       <!-- Menu -->
             <ul>
               <li>
-                <a href="index.html">Home</a>
+                <a href="index.html" >Home</a>
               </li>
               <li>
-                <a href="#guitarras" > Guitarras</a>
+                <a href="index.html#guitarras" > Guitarras</a>
               </li>
               <li>
-                <a href="precios.html" target"_blank" >Precios</a>
+                <a href="precios.html">Precios</a>
               </li>
             </ul>
         </nav>
       </header>
-      <section id="portada" class="portada contenedor">                      <!-- Portada -->
-        <h1 class="titulo">Guitarras Inviesibles</h1>
-        <h3 class="title-a">Se la estrella de rock que siempre quisiste ser</h3>
-        <button>Conoce mas</button>
-      </section>
-    </div>
-    <section id="guitarras" class="guitarras contenedor" >                                   <!-- Guitarras -->
-      <h2>Nuestras Guitarras</h2>
-      <article class="guitarra right">                                 <!-- Guitarra 1 -->
-          <img  class="derecha" src="image/invie-acustica.png" alt="Guitarra Invie Acustica" width="250" height="320"/>
-      <div class="contenedor-guitarra-a">
-        <h3 class="title-b">Invie Acustica</h3>
-        <ol class="left1">
-           <li>Estilo vintage</li>
-           <li>Madera Pura</li>
-           <li>Incluye estuche invisible de aluminio</li>
-         </ol>
+    </div>   
+    <section class="tabla">
+      <div class="contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Precio</th>
+              <th>Descripcion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$100000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+            <tr>
+              <td>Invie Acustica</td>
+              <td>$150000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+            <tr>
+              <td>Invie Custom</td>
+              <td>$1000000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      </article>
-      <article class="guitarra left">                              <!-- Guitarra 2 -->
-        <img class="izquierda" src="image/invie-classic.png"  alt="Guitarra Invie Classic" width="250" height="280" />
-        <div class="contenedor-guitarra-b">
-          <h3 class="title-c" > Invie Classic </h3>
-          <ol class="right-1">
-            <li>Estilo vintage</li>
-            <li>Liviana</li>
-            <li>Inicia tu camino como RockStar</li>
-          </ol>
-        </div>
-        <a></a>
-      </article>
     </section>
     <footer class="footer">
       <div class="contenedor">
@@ -76,7 +75,7 @@
               <input type="email" required id="email" name="email"/>
             </div>
             <div class="sexo">
-              <label class="aloha" for="radioMujer">
+              <label for="radioMujer">
                 <input type="radio" id="radioMujer" name="sexo"> Mujer
               </label>
               <label for="radioHombre">
@@ -99,16 +98,14 @@
             </div>
           </div>
           <div class="formulario2">
-            <label class="ayudita" for="comentarios">Comentarios
+            <label for="comentarios">Comentarios
               <textarea name="comentarios" rows="8" cols="40"></textarea>
               <input type="submit" value="Submit">
             </label>
           </div>
         </form>
       </div>
-    </footer>
-    <script type="text/javascript">
 
-    </script>
+    </footer>
   </body>
 </html>
